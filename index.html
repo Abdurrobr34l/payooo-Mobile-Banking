@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payooo</title>
+  <title>Payooo | Login</title>
+  <link rel="shortcut icon" href="./payoo.png" type="image/x-icon">
+  <!--* Css File -->
+  <link rel="stylesheet" href="./tailwind.init.css">
+  <!--* Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <!--* Tailwind Css -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-  
+
+<body class="font-outfit text-[#080808] flex flex-col items-center justify-center px-6 bg-[#F4F5F7] h-screen">
+
+  <!--* IMAGE START -->
+  <div class="flex justify-center w-[402px] h-[133px] bg-[url(./assets/bg.png)] bg-no-repeat bg-top">
+    <img src="./assets/tik-mark.png" alt="It is an tik mark icon image" class="pt-[33px] pb-7 w-[70px] h-[120px]">
+  </div>
+  <!--* IMAGE END -->
+
+  <!-- * LOGIN FORM START -->
+  <form class="flex flex-col gap-4 p-8 max-w-[402px] bg-white rounded-3xl">
+
+    <!--? Mobile input -->
+    <div>
+      <label for="login-phonenumber-input" class="font-medium">Mobile Number</label>
+      <input type="number" placeholder="Enter your number"
+        class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+        id="login-phonenumber-input" />
+      <!-- <input type="number" name=""> -->
+    </div>
+    <!--? pin input -->
+    <div>
+      <label for="login-pin-input" class="font-medium">4 Digit Pin</label>
+      <input type="number" placeholder="Enter 4 Digit Pin"
+        class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+        id="login-pin-input" />
+      <!-- <input type="number" name="" id="login-pin-input"> -->
+    </div>
+    <!--? Button -->
+    <button
+      class="btn py-7 pl-5 text-[16px] font-semibold text-white bg-blue-600 w-full rounded-[32px] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-blue-600"
+      id="login-button">Login</button>
+
+  </form>
+  <!--* LOGIN FORM END -->
+
+  <script src="./script/login.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payooo</title>
+  <link rel="shortcut icon" href="./payoo.png" type="image/x-icon">
+  <!--* Css File -->
+  <link rel="stylesheet" href="./tailwind.init.css">
+  <!--* Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <!--* Tailwind Css -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    p {
+      color: #08080880;
+    }
+  </style>
+</head>
+
+<body class="mx-auto font-outfit w-[450px] h-auto bg-[#F4F5F7]">
+
+  <!--* HEADER START -->
+  <header class="flex items-center justify-between px-6 bg-white border-b-2 border-[#0808081A]">
+
+    <!--? Logo & Balance -->
+    <nav class="flex items-center gap-2 py-[18px]">
+
+      <!--? logo -->
+      <div>
+        <a href="home.html">
+          <img src="./assets/tik-mark.png" alt="It is the wensite logo image" class="h-[48px]">
+        </a>
+      </div>
+
+      <!--? Balance -->
+      <div class="balance">
+        <h1 class="text-lg font-extrabol text-[#080808E6]" id="available-balance">$45000</h1>
+        <p class="mt-[6px] text-[#08080880]">Available Balance</p>
+      </div>
+
+    </nav>
+
+    <!--? Logout Button -->
+    <div>
+      <button
+        class="btn py-2 px-3 text-[#08080880] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-[#666768] rounded-lg"
+        id="logout-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="#666768" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+          <path d="M10 17l5-5-5-5" />
+          <path d="M15 12H3" />
+        </svg>
+        Log Out
+      </button>
+    </div>
+
+  </header>
+  <!--* HEADER END -->
+
+  <!--* TITLE START -->
+  <section class="pt-8 pb-6 px-6 bg-white">
+    <h2 class="text-2xl font-bold">🔥Welcome to Payooo!</h2>
+    <p class="pt-3 leading-[26px]">Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
+  </section>
+  <!--* TITLE END -->
+
+  <!--* BANKING OPTIONS START -->
+  <section class="px-6 pb-6 bg-white rounded-3xl">
+
+    <div class="grid grid-cols-3 gap-4">
+
+      <!--? Banking Option 1 -->
+      <button id="add-money"
+        class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        <span class="">
+          <img src="./assets/wallet1.png" alt="It is an add money image">
+        </span>
+        Add Money
+      </button>
+
+      <!--? Banking Option 2 -->
+      <button id="cashout"
+        class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        <span class="">
+          <img src="./assets/send1.png" alt="It is an cashout image">
+        </span>
+        Add Money
+      </button>
+
+      <!--? Banking Option 3 -->
+      <button id="transfer-money"
+        class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        <span class="">
+          <img src="./assets/money1.png" alt="It is an money image">
+        </span>
+        Add Money
+      </button>
+
+      <!--? Banking Option 4 -->
+      <button id="get-bonus"
+        class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        <span class="">
+          <img src="./assets/bonus1.png" alt="It is an bonus image">
+        </span>
+        Add Money
+      </button>
+
+      <!--? Banking Option 5 -->
+      <button id="pay-bill"
+        class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        <span class="">
+          <img src="./assets/purse1.png" alt="It is an bill image">
+        </span>
+        Add Money
+      </button>
+
+      <!--? Banking Option 6 -->
+      <button id="transactions"
+        class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        <span class="">
+          <img src="./assets/transaction1.png" alt="It is an transaction image">
+        </span>
+        Add Money
+      </button>
+
+    </div>
+
+  </section>
+  <!--* BANKING OPTIONS END -->
+
+  <section class="px-6 pt-8 pb-24"></section>
+
+  <script>
+    const logOutButton = document.getElementById('logout-button');
+
+    logOutButton.addEventListener('click', function () {
+      const answer = prompt("Do you want to log out? Type 'yes' or 'no'");
+
+      if (answer && answer.toLowerCase() === "yes") {
+        window.location.href = "./index.html";
+      } else {
+        alert("You stayed logged in!");
+      }
+    });
+
+  </script>
+</body>
+
+</html>
