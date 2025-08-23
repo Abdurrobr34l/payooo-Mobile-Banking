@@ -37,7 +37,7 @@
 
       <!--? Balance -->
       <div class="balance">
-        <h1 class="text-lg font-extrabol text-[#080808E6]" id="available-balance">$45000</h1>
+        <h1 class="text-lg font-extrabol text-[#080808E6]">$<span id="available-balance">45000</span></h1>
         <p class="mt-[6px] text-[#08080880]">Available Balance</p>
       </div>
 
@@ -119,7 +119,7 @@
       </button>
 
       <!--? Banking Option 6 -->
-      <button id="transactions"
+      <button id="add-money-buttom"
         class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span class="">
           <img src="./assets/transaction1.png" alt="It is an transaction image">
@@ -141,8 +141,8 @@
 
       <!--? Select Bank -->
       <div>
-        <label for="addmoney-bank" class="font-medium">Select A Bank</label>
-        <select id="addmoney-bank"
+        <label for="add-money-bank" class="font-medium">Select A Bank</label>
+        <select id="add-money-bank"
           class="select mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600">
           <option disabled selected>Select bank</option>
           <option>Islami Bank</option>
@@ -153,18 +153,18 @@
 
       <!--? Bank Account Number -->
       <div>
-        <label for="account-number" class="font-medium">Bank Account Number</label>
+        <label for="add-money-account-number" class="font-medium">Bank Account Number</label>
         <input type="number" placeholder="Enter 11 digit account number"
           class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
-          id="account-number" />
+          id="add-money-account-number" />
       </div>
 
       <!--? Amount to Add -->
       <div>
-        <label for="add-money" class="font-medium">Amount to Add</label>
+        <label for="add-money-amount" class="font-medium">Amount to Add</label>
         <input type="number" placeholder="Add Amount to withdraw"
           class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
-          id="add-money" />
+          id="add-money-amount" />
         <!-- <input type="number" name="" id="login-pin-input"> -->
       </div>
 
@@ -179,7 +179,7 @@
       <!--? Button -->
       <button
         class="btn py-7 pl-5 text-[16px] font-semibold text-white bg-blue-600 rounded-[32px] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-blue-600"
-        id="login-button">Add Money</button>
+        id="addmoney-button">Add Money</button>
 
     </form>
 
