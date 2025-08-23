@@ -13,8 +13,20 @@ addMoneyButton.addEventListener('click', function (reloadOff) {
   const amount = parseInt(addAmount.value);
   const pin = parseInt(addPin.value);
 
+  if (addAccountNumber.value.length != 11) {
+    alert("Please provide valid account number")
+    return;
+  }
+
+  if (pin != 1234) {
+    alert("Pin is invalid");
+    return;
+  }
+
   let newBalance = amount + moneyHave;
   document.getElementById('available-balance').innerText = newBalance;
 
+  addAccountNumber.value = "";
+  addPin.value = "";
   addAmount.value = "";
 })

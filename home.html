@@ -37,7 +37,7 @@
 
       <!--? Balance -->
       <div class="balance">
-        <h1 class="text-lg font-extrabol text-[#080808E6]" id="available-balance">$45000</h1>
+        <h1 class="text-lg font-extrabol text-[#080808E6]">$<span id="available-balance">45000</span></h1>
         <p class="mt-[6px] text-[#08080880]">Available Balance</p>
       </div>
 
@@ -88,7 +88,7 @@
         <span class="">
           <img src="./assets/send1.png" alt="It is an cashout image">
         </span>
-        Add Money
+        Cashout
       </button>
 
       <!--? Banking Option 3 -->
@@ -97,7 +97,7 @@
         <span class="">
           <img src="./assets/money1.png" alt="It is an money image">
         </span>
-        Add Money
+        Transfer Money
       </button>
 
       <!--? Banking Option 4 -->
@@ -106,7 +106,7 @@
         <span class="">
           <img src="./assets/bonus1.png" alt="It is an bonus image">
         </span>
-        Add Money
+        Get Bonus
       </button>
 
       <!--? Banking Option 5 -->
@@ -115,16 +115,16 @@
         <span class="">
           <img src="./assets/purse1.png" alt="It is an bill image">
         </span>
-        Add Money
+        Pay Bill
       </button>
 
       <!--? Banking Option 6 -->
-      <button id="transactions"
+      <button id="add-money-buttom"
         class="flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span class="">
           <img src="./assets/transaction1.png" alt="It is an transaction image">
         </span>
-        Add Money
+        Transactions
       </button>
 
     </div>
@@ -132,22 +132,121 @@
   </section>
   <!--* BANKING OPTIONS END -->
 
-  <section class="px-6 pt-8 pb-24"></section>
+  <!--* DUMMY SECTION START -->
+  <section id="dummy-section" class="pt-8 pb-24"></section>
+  <!--* DUMMY SECTION END -->
 
-  <script>
-    const logOutButton = document.getElementById('logout-button');
+  <!--* ADD MONEY FORM START -->
+  <section id="add-money-section" class="hidden px-6 pt-8 pb-24">
 
-    logOutButton.addEventListener('click', function () {
-      const answer = prompt("Do you want to log out? Type 'yes' or 'no'");
+    <h2 class="font-semibold text-lg">Add Money</h2>
 
-      if (answer && answer.toLowerCase() === "yes") {
-        window.location.href = "./index.html";
-      } else {
-        alert("You stayed logged in!");
-      }
-    });
+    <form class="flex flex-col gap-4 mt-4 p-6 bg-white rounded-3xl">
 
-  </script>
+      <!--? Select Bank -->
+      <div>
+        <label for="add-money-bank" class="font-medium">Select A Bank</label>
+        <select id="add-money-bank"
+          class="select mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600">
+          <option disabled selected>Select bank</option>
+          <option>Islami Bank</option>
+          <option>Dutch Bangla Bank</option>
+          <option>Sonali Bank</option>
+        </select>
+      </div>
+
+      <!--? Bank Account Number -->
+      <div>
+        <label for="add-money-account-number" class="font-medium">Bank Account Number</label>
+        <input type="number" placeholder="Enter 11 digit account number"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="add-money-account-number" />
+      </div>
+
+      <!--? Amount to Add -->
+      <div>
+        <label for="add-money-amount" class="font-medium">Amount to Add</label>
+        <input type="number" placeholder="Add Amount to withdraw"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="add-money-amount" />
+        <!-- <input type="number" name="" id="login-pin-input"> -->
+      </div>
+
+      <!--? Pin -->
+      <div>
+        <label for="add-money-pin" class="font-medium">Pin Number</label>
+        <input type="number" placeholder="Enter 4 digit pin number"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="add-money-pin" />
+      </div>
+
+      <!--? Button -->
+      <button
+        class="btn py-7 pl-5 text-[16px] font-semibold text-white bg-blue-600 rounded-[32px] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-blue-600"
+        id="addmoney-button">Add Money</button>
+
+    </form>
+
+  </section>
+  <!--* ADD MONEY FORM END -->
+
+    <!--* CASHOUT FORM START -->
+  <section id="cashout-section" class="hidden px-6 pt-8 pb-24">
+
+    <h2 class="font-semibold text-lg">Cashout</h2>
+
+    <form class="flex flex-col gap-4 mt-4 p-6 bg-white rounded-3xl">
+
+      <!--? Select Bank -->
+      <div>
+        <label for="add-money-bank" class="font-medium">Select A Bank</label>
+        <select id="add-money-bank"
+          class="select mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600">
+          <option disabled selected>Select bank</option>
+          <option>Islami Bank</option>
+          <option>Dutch Bangla Bank</option>
+          <option>Sonali Bank</option>
+        </select>
+      </div>
+
+      <!--? Bank Account Number -->
+      <div>
+        <label for="add-money-account-number" class="font-medium">Bank Account Number</label>
+        <input type="number" placeholder="Enter 11 digit account number"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="add-money-account-number" />
+      </div>
+
+      <!--? Amount to Add -->
+      <div>
+        <label for="add-money-amount" class="font-medium">Amount to Add</label>
+        <input type="number" placeholder="Add Amount to withdraw"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="add-money-amount" />
+        <!-- <input type="number" name="" id="login-pin-input"> -->
+      </div>
+
+      <!--? Pin -->
+      <div>
+        <label for="add-money-pin" class="font-medium">Pin Number</label>
+        <input type="number" placeholder="Enter 4 digit pin number"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="add-money-pin" />
+      </div>
+
+      <!--? Button -->
+      <button
+        class="btn py-7 pl-5 text-[16px] font-semibold text-white bg-blue-600 rounded-[32px] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-blue-600"
+        id="addmoney-button">Add Money</button>
+
+    </form>
+
+  </section>
+  <!--* CASHOUT FORM END -->
+
+  <script src="./script/logout.js"></script>
+  <script src="./script/section-toggling.js"></script>
+  <script src="./script/add-money.js"></script>
 </body>
 
 </html>
