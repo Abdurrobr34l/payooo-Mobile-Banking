@@ -118,7 +118,7 @@ transferMoneyButton.addEventListener('click', function (reloadOff) {
     return;
   }
   const accountNumber = parseInt(transferMoneyAccountNumber.value);
-  
+
   const amount = parseInt(transferMoneyAmount.value);
   if (amount > moneyHave) {
     alert("Insufficient Balance")
@@ -220,7 +220,8 @@ transactionButton.addEventListener('click', function (reloadOff) {
   const transactionDetail = document.getElementById('transaction-detail');
   transactionDetail.innerText = ""
 
-  for (let data of transaction) {
+  for (let i = transaction.length - 1; i >= 0; i--) {
+    const data = transaction[i];
     const div = document.createElement('div')
     div.innerHTML = `
      <div class="flex items-center justify-between mt-4 px-4 py-3 bg-white border-2 border-[#0808081A] rounded-xl">
