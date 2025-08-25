@@ -3,3 +3,9 @@
 .font-outfit {
   font-family: "Outfit", sans-serif;
 }
+.active-button {
+  background-color: #0874f20d;
+  color: #0874f2;
+  border: 2px solid #0874f2;
+  /* transition: all 0.53s linear; */
+}

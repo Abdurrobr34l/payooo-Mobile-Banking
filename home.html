@@ -75,7 +75,7 @@
 
       <!--? Banking Option 1 -->
       <button id="add-money"
-        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:cursor-pointer">
         <span>
           <img src="./assets/wallet1.png" alt="It is an add money image">
         </span>
@@ -84,7 +84,7 @@
 
       <!--? Banking Option 2 -->
       <button id="cash-out"
-        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl hover:cursor-pointer">
         <span>
           <img src="./assets/send1.png" alt="It is an cashout image">
         </span>
@@ -93,7 +93,7 @@
 
       <!--? Banking Option 3 -->
       <button id="transfer-money"
-        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl hover:cursor-pointer">
         <span>
           <img src="./assets/money1.png" alt="It is an money image">
         </span>
@@ -102,7 +102,7 @@
 
       <!--? Banking Option 4 -->
       <button id="get-bonus"
-        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl hover:cursor-pointer">
         <span>
           <img src="./assets/bonus1.png" alt="It is an bonus image">
         </span>
@@ -111,7 +111,7 @@
 
       <!--? Banking Option 5 -->
       <button id="pay-bill"
-        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl hover:cursor-pointer">
         <span>
           <img src="./assets/purse1.png" alt="It is an bill image">
         </span>
@@ -120,7 +120,7 @@
 
       <!--? Banking Option 6 -->
       <button id="transaction"
-        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl hover:cursor-pointer">
         <span>
           <img src="./assets/transaction1.png" alt="It is an transaction image">
         </span>
@@ -135,11 +135,11 @@
   <!--* BANKING OPTIONS END -->
 
   <!--* DUMMY SECTION START -->
-  <section id="dummy-section" class="pt-8 pb-24"></section>
+  <section id="dummy-section" class="hidden pt-8 pb-24"></section>
   <!--* DUMMY SECTION END -->
 
   <!--* ADD MONEY FORM START -->
-  <section id="add-money-section" class="banking-option-section px-6 pt-8 pb-24">
+  <section id="add-money-section" class="hidden banking-option-section px-6 pt-8 pb-24">
 
     <div class="flex items-center justify-between">
       <h2 class="font-semibold text-lg">Add Money</h2>
@@ -196,7 +196,7 @@
   <!--* ADD MONEY FORM END -->
 
   <!--* CASHOUT FORM START -->
-  <section id="cashout-section" class="banking-option-section px-6 pt-8 pb-24">
+  <section id="cashout-section" class="hidden banking-option-section px-6 pt-8 pb-24">
 
     <div class="flex items-center justify-between">
       <h2 class="font-semibold text-lg">Cash Out</h2>
@@ -240,7 +240,7 @@
   <!--* CASHOUT FORM END -->
 
   <!--* TRANSFER MONEY FORM START -->
-  <section id="transfer-money-section" class="banking-option-section px-6 pt-8 pb-24">
+  <section id="transfer-money-section" class="hidden banking-option-section px-6 pt-8 pb-24">
     <div class="flex items-center justify-between">
       <h2 class="font-semibold text-lg">Transfer Money</h2>
       <button class="clear-button btn btn-error">Clear</button>
@@ -281,6 +281,112 @@
 
   </section>
   <!--* TRANSFER MONEY FORM END -->
+
+  <!--* GET BONUS FORM START -->
+  <section id="get-bonus-section" class="hidden banking-option-section px-6 pt-8 pb-24">
+    <div class="flex items-center justify-between">
+      <h2 class="font-semibold text-lg">Get Bonus</h2>
+      <button class="clear-button btn btn-error">Clear</button>
+    </div>
+
+    <form class="flex flex-col gap-4 mt-4 p-6 bg-white rounded-3xl">
+
+      <!--? User Account Number -->
+      <div>
+        <label for="get-bonus-input" class="font-medium">Enter Bonus Coupon</label>
+        <input type="text" placeholder="Enter your coupon"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="get-bonus-input" />
+      </div>
+
+      <!--? Button -->
+      <button
+        class="btn py-7 pl-5 text-[16px] font-semibold text-white bg-blue-600 rounded-[32px] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-blue-600"
+        id="get-bonus-button">Withdraw Money</button>
+
+    </form>
+
+  </section>
+  <!--* GET BONUS FORM END -->
+
+  <!--* PAY BILL START -->
+  <section id="pay-bill-section" class="hidden banking-option-section px-6 pt-8 pb-24">
+
+    <div class="flex items-center justify-between">
+      <h2 class="font-semibold text-lg">Pay Bill</h2>
+      <button class="clear-button btn btn-error bg-tra">Clear</button>
+    </div>
+
+    <form class="flex flex-col gap-4 mt-4 p-6 bg-white rounded-3xl">
+
+      <!--? Select Bank -->
+      <div>
+        <label for="pay-bill-bank" class="font-medium">Select To Pay</label>
+        <select id="pay-bill-bank"
+          class="select mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600">
+          <option disabled selected>Select bank</option>
+          <option>Islami Bank</option>
+          <option>Dutch Bangla Bank</option>
+          <option>Sonali Bank</option>
+        </select>
+      </div>
+
+      <!--? Bank Account Number -->
+      <div>
+        <label for="pay-bill-account-number" class="font-medium">Biller Account Number</label>
+        <input type="number" placeholder="Enter account number"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="pay-bill-account-number" />
+      </div>
+
+      <!--? Amount to Pay -->
+      <div>
+        <label for="pay-bill-amount" class="font-medium">Amount to Pay</label>
+        <input type="number" placeholder="Add Amount to pay"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="pay-bill-amount" />
+        <!-- <input type="number" name="" id="login-pin-input"> -->
+      </div>
+
+      <!--? Pin -->
+      <div>
+        <label for="pay-bill-pin" class="font-medium">Pin Number</label>
+        <input type="number" placeholder="Enter 4 digit pin number"
+          class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
+          id="pay-bill-pin" />
+      </div>
+
+      <!--? Button -->
+      <button
+        class="btn py-7 pl-5 text-[16px] font-semibold text-white bg-blue-600 rounded-[32px] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-blue-600"
+        id="pay-bill-button">Pay Now</button>
+
+    </form>
+
+  </section>
+  <!--* PAY BILL END -->
+
+  <!--* TRANSACTION START -->
+  <section id="transaction-section" class="banking-option-section px-6 pt-8 pb-24">
+
+    <div class="flex items-center justify-between">
+      <h2 class="font-semibold text-lg">Pay Bill</h2>
+      <div class="flex gap-3">
+        <button class="btn p-0 bg-transparent text-[#080808B3] border-none hover:text-[#0874f2] hover:shadow-none">View
+          All</button>
+        <button class="clear-button btn btn-error bg-tra">Clear</button>
+      </div>
+    </div>
+
+    <div id="transaction-detail"
+      class="flex flex-col gap-3">
+
+<!--* Dynamicly from js it structure will come -->
+
+    </div>
+
+  </section>
+  <!--* TRANSACTION END -->
 
   <script src="./script/logout.js"></script>
   <script src="./script/section-toggling.js"></script>

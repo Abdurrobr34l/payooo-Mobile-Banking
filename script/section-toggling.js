@@ -5,12 +5,18 @@ for (let section of bankingSections) {
   section.style.display = "none"
 }
 
-//* Reuseable Function
+//* Reuseable Function Start
+//? To get indivitual sections
 function individualSection(bankingSections) {
   for (let section of bankingSections) {
     section.style.display = "none"
   }
 }
+//? For getting id and adding display block to it
+function idStyle(id) {
+  document.getElementById(id).style.display = "block"
+}
+//* Reuseable Function End
 
 //* When any option button is clicked, hide dummy section
 const buttons = document.querySelectorAll('.form-button');
@@ -37,19 +43,38 @@ for (let button of clearButtons) {
 
 //? Add-Money
 document.getElementById('add-money').addEventListener('click', function () {
-  individualSection(bankingSections)
-  document.getElementById('add-money-section').style.display = "block"
+  individualSection(bankingSections);
+  idStyle('add-money-section');
 
 })
+
 //? Cash-Out
 document.getElementById('cash-out').addEventListener('click', function () {
-  individualSection(bankingSections)
-  document.getElementById('cashout-section').style.display = "block"
+  individualSection(bankingSections);
+  idStyle('cashout-section');
 
 })
 //? Transfer-Money
 document.getElementById('transfer-money').addEventListener('click', function () {
-  individualSection(bankingSections)
-  document.getElementById('transfer-money-section').style.display = "block"
+  individualSection(bankingSections);
+  idStyle('transfer-money-section');
+
+})
+//? GET BONUS
+document.getElementById('get-bonus').addEventListener('click', function () {
+  individualSection(bankingSections);
+  idStyle('get-bonus-section');
+
+})
+//? PAY BILL
+document.getElementById('pay-bill').addEventListener('click', function () {
+  individualSection(bankingSections);
+  idStyle('pay-bill-section');
+
+})
+//? TRANSACTION
+document.getElementById('transaction').addEventListener('click', function () {
+  individualSection(bankingSections);
+  idStyle('transaction-section');
 
 })
