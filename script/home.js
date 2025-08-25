@@ -147,7 +147,7 @@ transferMoneyButton.addEventListener('click', function (reloadOff) {
 })
 
 //* GET BONUS MONEY
-// alert("Today's Special Bonus: bonus25")
+alert("Today's Special Bonus: bonus25")
 const getBonusInput = document.getElementById('get-bonus-input');
 const getBonusButton = document.getElementById('get-bonus-button');
 
