@@ -74,7 +74,8 @@
     <div class="grid grid-cols-3 gap-4">
 
       <!--? Banking Option 1 -->
-      <button id="add-money" class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+      <button id="add-money"
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span>
           <img src="./assets/wallet1.png" alt="It is an add money image">
         </span>
@@ -82,7 +83,8 @@
       </button>
 
       <!--? Banking Option 2 -->
-      <button id="cash-out" class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+      <button id="cash-out"
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span>
           <img src="./assets/send1.png" alt="It is an cashout image">
         </span>
@@ -90,7 +92,8 @@
       </button>
 
       <!--? Banking Option 3 -->
-      <button id="transfer-money" class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+      <button id="transfer-money"
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span>
           <img src="./assets/money1.png" alt="It is an money image">
         </span>
@@ -98,7 +101,8 @@
       </button>
 
       <!--? Banking Option 4 -->
-      <button id="get-bonus" class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+      <button id="get-bonus"
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span>
           <img src="./assets/bonus1.png" alt="It is an bonus image">
         </span>
@@ -106,7 +110,8 @@
       </button>
 
       <!--? Banking Option 5 -->
-      <button id="pay-bill" class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+      <button id="pay-bill"
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span>
           <img src="./assets/purse1.png" alt="It is an bill image">
         </span>
@@ -114,7 +119,8 @@
       </button>
 
       <!--? Banking Option 6 -->
-      <button id="transaction" class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
+      <button id="transaction"
+        class="form-button flex flex-col items-center justify-center gap-2 py-5 px-6 text-sm text-[#080808B3] border-2 border-[#0808081A] rounded-xl transition-colors duration-[0.53s] hover:bg-[#0874F20D] hover:text-[#0874F2] hover:border-2 hover:border-[#0874F2] hover:cursor-pointer">
         <span>
           <img src="./assets/transaction1.png" alt="It is an transaction image">
         </span>
@@ -135,7 +141,10 @@
   <!--* ADD MONEY FORM START -->
   <section id="add-money-section" class="banking-option-section px-6 pt-8 pb-24">
 
-    <h2 class="font-semibold text-lg">Add Money</h2>
+    <div class="flex items-center justify-between">
+      <h2 class="font-semibold text-lg">Add Money</h2>
+      <button class="clear-button btn btn-error bg-tra">Clear</button>
+    </div>
 
     <form class="flex flex-col gap-4 mt-4 p-6 bg-white rounded-3xl">
 
@@ -189,7 +198,10 @@
   <!--* CASHOUT FORM START -->
   <section id="cashout-section" class="banking-option-section px-6 pt-8 pb-24">
 
-    <h2 class="font-semibold text-lg">Cash Out</h2>
+    <div class="flex items-center justify-between">
+      <h2 class="font-semibold text-lg">Cash Out</h2>
+      <button class="clear-button btn btn-error bg-tra">Clear</button>
+    </div>
 
     <form class="flex flex-col gap-4 mt-4 p-6 bg-white rounded-3xl">
 
@@ -227,27 +239,29 @@
   </section>
   <!--* CASHOUT FORM END -->
 
-    <!--* TRANSFER MONEY FORM START -->
+  <!--* TRANSFER MONEY FORM START -->
   <section id="transfer-money-section" class="banking-option-section px-6 pt-8 pb-24">
-
-    <h2 class="font-semibold text-lg">Transfer Money Out</h2>
+    <div class="flex items-center justify-between">
+      <h2 class="font-semibold text-lg">Transfer Money</h2>
+      <button class="clear-button btn btn-error">Clear</button>
+    </div>
 
     <form class="flex flex-col gap-4 mt-4 p-6 bg-white rounded-3xl">
 
-      <!--? Agent Number -->
+      <!--? User Account Number -->
       <div>
-        <label for="cashout-account-number" class="font-medium">Agent Number</label>
+        <label for="add-money-account-number" class="font-medium">User Account Number</label>
         <input type="number" placeholder="Enter 11 digit number"
           class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
-          id="cashout-account-number" />
+          id="transfer-money-account-number" />
       </div>
 
-      <!--? Amount to Add -->
+      <!--? Amount -->
       <div>
-        <label for="cashout-amount" class="font-medium">Amount to Add</label>
-        <input type="number" placeholder="Enter amount to withdraw"
+        <label for="cashout-amount" class="font-medium">Amount</label>
+        <input type="number" placeholder="Enter amount to transfer"
           class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
-          id="cashout-amount" />
+          id="transfer-money-amount" />
       </div>
 
       <!--? Pin -->
@@ -255,13 +269,13 @@
         <label for="cashout-pin" class="font-medium">Pin Number</label>
         <input type="number" placeholder="Enter 4 digit pin number"
           class="input mt-3 py-7 pl-5 font-light bg-[#F4F5F7] w-full rounded-[32px] border-none focus:outline-2 focus:outline-blue-600"
-          id="cashout-pin" />
+          id="transfer-money-pin" />
       </div>
 
       <!--? Button -->
       <button
         class="btn py-7 pl-5 text-[16px] font-semibold text-white bg-blue-600 rounded-[32px] transition-colors duration-[0.53s] hover:bg-[#080808] hover:text-blue-600"
-        id="cashout-button">Withdraw Money</button>
+        id="transfer-money-button">Withdraw Money</button>
 
     </form>
 

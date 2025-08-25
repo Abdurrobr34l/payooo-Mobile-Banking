@@ -65,3 +65,38 @@ cashOutButton.addEventListener('click', function (reloadOff) {
   cashOutAmount.value = "";
   cashOutPin.value = "";
 })
+
+//* TRANSFER MONEY
+const transferMoneyAccountNumber = document.getElementById('transfer-money-account-number');
+const transferMoneyAmount = document.getElementById('transfer-money-amount');
+const transferMoneyPin = document.getElementById('transfer-money-pin');
+const transferMoneyButton = document.getElementById('transfer-money-button');
+
+transferMoneyButton.addEventListener('click', function (reloadOff) {
+  reloadOff.preventDefault();
+
+  const availableMoney = document.getElementById('available-balance').innerText;
+  const moneyHave = parseInt(availableMoney);
+
+
+  if (transferMoneyAccountNumber.value.length != 11) {
+    alert("Please provide valid account number")
+    return;
+  }
+  const accountNumber = parseInt(transferMoneyAccountNumber.value);
+
+  if (transferMoneyPin.value != 1234) {
+    alert("Pin is invalid");
+    return;
+  }
+  const pin = parseInt(transferMoneyPin.value);
+
+  const amount = parseInt(transferMoneyAmount.value);
+  let newBalance = moneyHave - amount;
+  document.getElementById('available-balance').innerText = newBalance;
+
+
+  transferMoneyAccountNumber.value = "";
+  transferMoneyAmount.value = "";
+  transferMoneyPin.value = "";
+})
